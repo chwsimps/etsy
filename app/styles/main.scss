@@ -22,12 +22,3 @@ li {
   @include span-columns (3);
   @include omega(3n);
 }
-
-// #whiskey {
-//   width: 225px;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   float: left;
-//   margin: auto;
-// }
