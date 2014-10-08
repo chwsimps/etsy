@@ -1,6 +1,6 @@
 
 var container = $('#full'),
-                img, img_title, img_user, img_price, img_cc;
+                img, img_title, img_user, img_price, img_cc, cat;
 
 api.results.forEach( function (whisk) {
 
@@ -11,7 +11,7 @@ api.results.forEach( function (whisk) {
 
   img_user = "<p class='u'>" + whisk.Shop.shop_name + "</p>"
 
-  img_price = "<p class='p'>" + whisk.price + "</p>";
+  img_price = "<p class='p'>" + "$" + whisk.price + "</p>";
 
   img_cc = "<p class='cc'>" + whisk.currency_code + "</p>";
 
@@ -22,27 +22,17 @@ api.results.forEach( function (whisk) {
 
 });
 
+// function shorten(img_title, maxLength) {
+//     var ret = img_title;
+//     if (ret.length > maxLength) {
+//         ret = ret.substr(0,maxLength-3) + "...";
+//     }
+//     return ret;
+// }
 
 
-
-// var container = $('#tracks'),
-//     song_image, song_title, song_mp3, track;
+// api.results.filter( function (x) {
+//   cat = "<p>" + x.category_path + "</p>";
 //
-// rocktracks.forEach( function (song) {
-//
-//   // Build Image Tag for Each Song
-//   song_image = "<img src='" + song.artwork_url + "' />'";
-//
-//   // Build Image Title
-//   song_title = "<p>" + song.title + "</p>";
-//
-//   // Build the Song MP3
-//   song_mp3 = "<audio controls src='" + song.stream_url + "?client_id=87322f9fd4d27754fc7adf00ce869254'></audio>";
-//
-//   // Build Each Track Display
-//   track = "<li>" + song_title + song_mp3  + song_image + "<hr /></li>";
-//
-//   // Append Each Track To my Tracks List
-//   container.append(track);
-
-// });
+//   $(side).append(x);
+// }

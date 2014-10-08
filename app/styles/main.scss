@@ -2,23 +2,204 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
+@mixin color-box {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 2px;
+  float: left;
+  margin: 3px;
+}
+
 // Custom Styles
 
 * {
   list-style: none;
+  text-decoration: none;
 }
 
 body {
   background: HSLA(60, 17%, 95%, 1);
 }
 
-.section {
-  @include outer-container;
+//Top Section after header ========
+
+.top-left {
+  width: 225px;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: bottom;
+  padding-left: 70px;
 }
 
-// Side Content
+.top-middle {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 0;
+  padding-left: 134px;
+}
 
-li {
+.mid-p {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 0;
+}
+
+.top-right {
+  float: right;
+  vertical-align: bottom;
+  margin-bottom: 0;
+  margin-top: 21.28px;
+  padding-right: 170px;
+}
+
+//Sidebar ========
+
+.sidebar {
+  @include span-columns(3);
+  height: 2500px;
+  margin-top: 14px;
+}
+
+.sidebox {
+  width: 225px;
+  height: 1125px;
+  background-color: white;
+  padding: 1px 15px;
+  font-size: 14px;
+  form {
+    color: HSLA(192, 99%, 36%, 1);
+    border-bottom: solid 1px HSLA(0, 0%, 87%, 1);
+  }
+}
+
+.min-max {
+  padding-bottom: 20px;
+  border-bottom: solid 1px HSLA(0, 0%, 87%, 1);
+}
+
+.items {
+  float: left;
+}
+
+ul.color-box {
+  padding: 0;
+  height: 60px;
+  border-bottom: solid 1px HSLA(0, 0%, 87%, 1);
+}
+
+li.red {
+  @include color-box;
+}
+
+li.orange {
+  @include color-box;
+  background-color: orange;
+}
+
+li.yellow {
+  @include color-box;
+  background-color: yellow;
+}
+
+li.green {
+  @include color-box;
+  background-color: green;
+}
+
+li.blue {
+  @include color-box;
+  background-color: blue;
+}
+
+li.purple {
+  @include color-box;
+  background-color: purple;
+}
+
+//Small Icons within Images =======
+
+li.heart {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+li.lines {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+// Middle Section/Images =======
+
+.section {
+  @include outer-container;
+  margin-top: -10px;
+}
+
+#whiskey li {
   @include span-columns (3);
-  @include omega(3n);
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 225px;
+  height: 220px;
+  margin: 15px;
+  background-color: white;
+  border: solid 1px HSLA(0, 0%, 93%, 1);
+  &:hover {
+    border: solid 1px HSLA(0, 0%, 87%, 1);
+    box-shadow: .5px .5px #888888;
+  }
+}
+
+li img {
+  width: 214px;
+  height: 170px;
+  margin: 5px 5px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.t {
+  margin: 0;
+  font-size: 13px;
+  padding-left: 5px;
+  color: HSLA(0, 0%, 40%, 1);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.u {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 13px;
+  padding-left: 5px;
+  color: HSLA(0, 0%, 70%, 1);
+  width: 150px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.p {
+  display: inline-block;
+  font-size: 13px;
+  padding: 1px;
+  padding-top: 5px;
+  margin: 0;
+  color: HSLA(105, 43%, 56%, 1);
+}
+
+.cc {
+  display: inline-block;
+  font-size: 13px;
+  padding: 1px;
+  margin: 0;
+  color: HSLA(105, 43%, 56%, 1);
 }

@@ -22,11 +22,67 @@
     <!-- endbuild -->
   </head>
   <body>
+    <div class="top">
+      <h4 class="top-left">Show results for:</h4>
+      <h4 class="top-middle">"Whiskey"</h4>
+        <p class="mid-p">We found 18,197 items!</p>
+      <p class="top-right">Sort by:</p>
+    </div>
 
-        <section>
-          <ul id="whiskey">
+    <section class="section">
+
+      <div class="sidebar">
+        <div class="sidebox">
+          <h4>Item Type</h4>
+            <form>
+              <a href="#"><input type="radio" name="items" value="items"> All Items<br></br></a>
+              <a href="#"><input type="radio" name="items" value="items"> Handmade<br></br></a>
+              <a href="#"><input type="radio" name="items" value="items"> Vintage<br></br></a>
+              <a href="#"><input type="radio" name="items" value="items"> Craft Supplies<br></br></a>
+            </form>
+          <h4>Categories</h4>
+          <h4>Handmade</h4>
+          <ul id="side">
           </ul>
-        </section>
+          <h4>Price Filter</h4>
+          <div class="min-max">
+            <input type="text" name="d" placeholder="$ min" size="3" /> to <input type="text" name="d" placeholder="$ max" size="3" />
+            <input type = "Submit" value = ">">
+          </div>
+          <div class="colors">
+            <h4>Filter by Color</h4>
+              <ul class="color-box">
+                <a href="#"><li class="red"></li></a>
+                <a href="#"><li class="orange"></li></a>
+                <a href="#"><li class="yellow"></li></a>
+                <a href="#"><li class="green"></li></a>
+                <a href="#"><li class="blue"></li></a>
+                <a href="#"><li class="purple"></li></a>
+              </ul>
+          </div>
+          <h4>Filter by Something</h4>
+            <form>
+              <a href="#"><input type="radio" name="items" value="items"> All Items<br></br></a>
+              <a href="#"><input type="radio" name="items" value="items"> Handmade<br></br></a>
+            </form>
+          <h4>Filter by Something else</h4>
+            <form>
+              <a href="#"><input type="radio" name="items" value="items"> All Items<br></br></a>
+              <a href="#"><input type="radio" name="items" value="items"> Handmade<br></br></a>
+            </form>
+        </div> <!--sidebox-->
+      </div>
+
+
+      <a href="google.com">
+        <ul id="whiskey">
+          <!-- <div class="boxes">
+            <a href="#" class="heart">Hea</a>
+            <a href="#" class="lines">Lines</a>
+          </div> -->
+        </ul>
+      <a>
+    </section>
 
 
     <!-- build:js scripts/vendor.js -->
