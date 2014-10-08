@@ -73,6 +73,16 @@ body {
   }
 }
 
+h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cat {
+  border-bottom: solid 1px HSLA(0, 0%, 87%, 1);
+  padding-bottom: 20px;
+}
+
 .min-max {
   padding-bottom: 20px;
   border-bottom: solid 1px HSLA(0, 0%, 87%, 1);
@@ -115,6 +125,10 @@ li.blue {
 li.purple {
   @include color-box;
   background-color: purple;
+}
+
+.dropdown {
+  width: 175px;
 }
 
 //Small Icons within Images =======
