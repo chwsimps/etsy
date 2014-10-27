@@ -7,9 +7,9 @@ api.results.forEach( function (whisk) {
   //Build images
   img = "<img src='" + whisk.Images[0].url_170x135 + "'/img>";
 
-  // heart = "<div class='heart'>" + url(https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png) + "</div>";
+  heart = "<div class='heart'>" + "url(https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png)" + "</div>";
 
-  // ham = "<div class='ham'>" + url(https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png) + "</div>";
+  ham = "<div class='ham'>" + 'url(https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png)' + "</div>";
 
   img_title = "<p class='t'>" + whisk.title + "</p>";
 
